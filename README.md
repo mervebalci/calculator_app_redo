@@ -1,3 +1,7 @@
+# calculator_app_redo
+
+Re-creating the calculator app with react
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

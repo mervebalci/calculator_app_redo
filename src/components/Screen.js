@@ -1,7 +1,13 @@
-export default function Screen({ children }) {
+import { useContext } from "react"
+import { CalcContext } from "../context/CalcContext"
+import { Textfit } from "react-textfit";
+
+export default function Screen() {
+  const { calc } = useContext(CalcContext);
+
   return (
-    <div className="screen">
-      {children}
-    </div>
+    <Textfit className="screen" max={70} mode="single">
+      {calc.number ? calc.number : calc.result}
+    </Textfit>
   )
 }
